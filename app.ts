@@ -33,7 +33,7 @@ app.get('/', async (req, res) => {
 ;(async function () {
   try {
     await mongoose.connect(
-      'mongodb+srv://Addal:wylP4uNdP631LSAR@cluster0.iouzy.mongodb.net/?retryWrites=true&w=majority',
+     mongo_uri,
     )
   } catch (err) {
     console.log(err)
